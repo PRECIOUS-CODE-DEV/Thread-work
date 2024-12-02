@@ -1,0 +1,260 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    height: 100vh;
+}
+
+nav {
+    width: 6%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 8px;
+}
+
+nav > div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    text-align: center;
+}
+
+nav > div > div {
+    cursor: pointer;
+    padding: 10px 0;
+    border-radius: 10px;
+    &:hover {
+        background-color: rgba(0,0,0,0.04);
+    }
+}
+
+nav svg {
+    --fill: transparent;
+    --stroke: rgb(0,0,0,0.5);
+    fill: var(--fill);
+    stroke: var(--stroke);
+    width: 25px;
+}
+
+#create {
+    background-color: rgba(0,0,0,0.04);
+    &:hover svg {
+        stroke: black;
+    }
+}
+
+nav #logo svg {
+    --fill: black;
+    width: 35px;
+}
+
+main {
+    width: 94%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    height: 10%;
+    position: relative;
+}
+
+header h1 {
+    font-weight: 500;
+}
+
+header button#popover-btn {
+    background-color: transparent;
+    border: none;
+}
+
+header svg {
+    width: 25px;
+    box-shadow: 0 2px 9px 0 rgba(0,0,0,0.2);
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+header hr {
+    margin-block: 5px;
+    border-top: 1px solid rgb(0,0,0,0.2);
+}
+
+header div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,0.2);
+    width: 250px;
+    /* position: absolute; */
+    top: 8%;
+    left: 46%;
+}
+
+header ul li {
+    cursor: pointer;
+    font-weight: 500;
+}
+header ul li {
+    list-style: none;
+    padding: 20px 10px;
+    border-radius: 5px;
+    &:hover {
+        background-color: rgb(0,0,0,0.04);
+    }
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+
+header ul li button {
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+}
+
+main section {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 300%;
+    margin: auto;
+    border: 1px solid rgb(213,213,213);
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.04);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main section div#create-post {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 25px 30px;
+    border-bottom: 1px solid rgb(0,0,0,0.2);
+}
+
+main section div#create-post > div {
+    flex: 1;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+main section div#create-post > div span {
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+}
+
+main section div#create-post img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+main section div#create-post button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,0.2);
+    font-weight: 500;
+    background-color: transparent;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+.section-2{
+    padding: 2rem; 
+}
+.icon-div img{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+}
+
+.icon-div{    
+    display: flex;
+}
+.icon-div p{
+    margin-top: 1rem;
+}
+.icon-div p svg{
+    width: 13px;
+    height: 13px;
+    color: blue;
+}
+.icon-div p span{
+    color: grey;
+}
+
+.image-2 img{
+    width: 60%;
+    height: 350px;
+    margin-top: 1.5rem;
+    border-radius: 7px;
+}
+
+
+.comment-set{
+    display: flex;
+    margin-top: 1rem;
+}
+.comment-set svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.2rem;
+    background-color: white;
+
+}
+.comment-set span{
+    margin-right: 1rem;
+}
+#create-2{
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    position: relative;
+}
+/* #create-2 svg{
+    position: absolute;
+    bottom: 12px;
+    right: 828px;
+} */
+#icon-create svg{
+    background-color: rgba(0,0,0,0.04);
+    width: 45px;
+    height: 45px;
+    margin-top: 35rem;
+    margin-right: 8rem;
+    --fill: transparent;
+    --stroke: rgb(0,0,0,0.5);
+    fill: var(--fill);
+    stroke: var(--stroke);
+}
+.line{
+     border: 0.5px solid rgb(213,213,213); 
+}
+.section-3{
+    padding: 3rem;
+}
